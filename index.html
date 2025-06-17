@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGPT</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<div class="container">
+    <header class="app-header">
+        <h1 class="heading">Ola, pessoal</h1>
+        <h2 class="sub-heading">Como posso te ajudar ?</h2>
+    </header>
+
+
+<ul class="suggestions">
+<li class="suggestions-item">
+    <p class="text">"O que a ciência suspeita existir nas regiões mais profundas do oceano que ainda não conseguimos explorar?"</p>
+    <span class="material-symbols-outlined">draw</span>
+</li>
+
+
+<li class="suggestions-item">
+    <p class="text">"Existe alguma explicação científica para os casos em que múltiplas pessoas alegam ver o mesmo espírito ou entidade?"</p>
+    <span class="material-symbols-outlined">lightbulb</span>
+</li>
+
+<li class="suggestions-item">
+    <p class="text">"Como a inteligência artificial pode ajudar a resolver crimes arquivados há décadas com poucas pistas?"</p>
+    <span class="material-symbols-outlined">explore</span>
+</li>
+
+<li class="suggestions-item">
+    <p class="text">"E se os sonhos repetitivos forem memórias de vidas passadas ou mensagens de algo que não compreendemos?"</p>
+    <span class="material-symbols-outlined">code_blocks</span>
+</li>
+</ul>
+
+
+<div class="chats-container">
+    <div class="message user-message">
+        
+    </div>
+
+     <div class="message bot-message">
+        
+        <p class="message-text"></p>
+    </div>
+
+    
+</div>
+
+
+
+<div class="prompt-container">
+
+    <div class="prompt-wrapper">
+
+        <form action="#" class="prompt-form">
+            <input type="text" placeholder="Fale com Edu GPT" class="prompt-input"
+            required>
+            <div class="prompt-actions">
+                <div class="file-upload-wrapper">
+                    <img src="" class="file-preview">
+                    <input type="file" accept="image/*, .pdf, .txt, .csv" id="file-input" hidden>
+                    <button type="button"
+                class="file-icon material-symbols-outlined">description</button>
+                <button id="ad-file-btn" type="button"
+                class="material-symbols-outlined">attach_file</button>
+                <button id="cancel-file-btn" type="button"
+                class="material-symbols-outlined">close</button>
+                </div>
+                
+
+                 <button type="button" id="stop-response-btn" type="submit"
+                class="material-symbols-outlined">stop_circle</button>
+
+                <button id="send-prompt-btn" type="submit"
+                class="material-symbols-outlined">arrow_upward</button>
+            </div>
+        </form>
+
+
+<button id="theme-toggle-btn" type="button"
+                class="material-symbols-outlined">light_mode</button>
+
+                <button id="delete-chats-btn" type="button"
+                class="material-symbols-outlined">delete</button>
+
+    </div>
+
+<p class="disclaimer-text">Edu Gpt com inteligência do Gemini 2.0 fast</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+    
+</body>
+<script src="app.js"></script>
+</html>
